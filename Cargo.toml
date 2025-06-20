@@ -1,9 +1,20 @@
 [workspace]
 resolver = "2"
-default-members = ["muxy-server"]
-members = ["muxy-server"]
+members = ["ruxy-server"]
 
 [workspace.package]
 version = "0.1.0"
 edition = "2024"
 
+[workspace.dependencies]
+ruxy-server = { path = "ruxy-server" }
+
+[package]
+name = "ruxy"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ruxy-server.workspace = true
+color-eyre = "0.6.5"
+eyre = "0.6.12"
