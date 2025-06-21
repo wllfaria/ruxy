@@ -4,5 +4,8 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-nix = { version = "0.30.1", features = ["process", "term", "ioctl", "poll", "fs", "signal"] }
-thiserror = "2.0.12"
+thiserror.workspace = true
+nix = { version = "0.30.1", features = ["term", "ioctl", "poll", "fs", "signal", "process"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["fmt", "env-filter"] }
+tracing-appender = "0.2.3"

@@ -1,0 +1,9 @@
+[package]
+name = "ruxy-client"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+crossterm = "0.29.0"
+nix = "0.30.1"
